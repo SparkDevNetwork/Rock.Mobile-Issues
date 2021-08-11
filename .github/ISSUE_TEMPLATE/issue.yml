@@ -22,6 +22,15 @@ body:
       description: A clear and concise description of the issue.
     validations:
       required: true
+  - type: checkboxes
+    id: reproduction-apps
+    attributes:
+      label: Can reproduce in
+      description: Which of our demo apps have you reproduced this issue in?
+      options:
+        - label: Orange App
+          required: true
+        - label: Blue App
   - type: textarea
     id: reproduction-steps
     attributes:
@@ -83,3 +92,17 @@ body:
       placeholder: 
     validations:
       required: true
+  - type: textarea
+    id: screenshots-video
+    attributes:
+      label: Screenshots or Videos
+      description: Please add screenshots and/or videos to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-xaml
+    attributes:
+      label: Reproduction XAML
+      description: If applicable, please provide the XAML to reproduce the issue.
+    validations:
+      required: false
