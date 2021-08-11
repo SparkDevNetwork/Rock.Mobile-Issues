@@ -1,0 +1,51 @@
+name: Issue Report
+description: File a bug report
+title: "[Issue]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please be sure to read our full guidelines for submitting issues on this repo's homepage before you continue.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Brief description of the issue.
+      placeholder: 
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Describe the Issue in Detail
+      description: A clear and concise description of the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide step-by-step instructions on how to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Tap on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: A clear and concise description of what actually happened.
+    validations:
+      required: true
+  
