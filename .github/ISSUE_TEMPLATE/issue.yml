@@ -6,15 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please be sure to read our full guidelines for submitting issues on this repo's homepage before you continue.
-  - type: input
-    id: title
+        > Please be sure to read our full guidelines for submitting issues on this repo's homepage before you continue.
+  - type: markdown
     attributes:
-      label: Title
-      description: Brief description of the issue.
-      placeholder: 
-    validations:
-      required: true
+      value: |
+        # Basic Information
   - type: textarea
     id: details
     attributes:
@@ -29,7 +25,6 @@ body:
       description: Which of our demo apps have you reproduced this issue in?
       options:
         - label: Orange App
-          required: true
         - label: Blue App
   - type: textarea
     id: reproduction-steps
@@ -57,10 +52,24 @@ body:
       description: A clear and concise description of what actually happened.
     validations:
       required: true
+  - type: textarea
+    id: screenshots-video
+    attributes:
+      label: Screenshots or Videos
+      description: Please add screenshots and/or videos to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-xaml
+    attributes:
+      label: Reproduction XAML
+      description: If applicable, please provide the XAML to reproduce the issue.
+    validations:
+      required: false
   - type: markdown
     attributes:
       value: |
-        # Basic Information
+        # Environment Information
   - type: input
     id: mobile-shell-version
     attributes:
@@ -92,17 +101,3 @@ body:
       placeholder: 
     validations:
       required: true
-  - type: textarea
-    id: screenshots-video
-    attributes:
-      label: Screenshots or Videos
-      description: Please add screenshots and/or videos to help explain your problem.
-    validations:
-      required: true
-  - type: textarea
-    id: reproduction-xaml
-    attributes:
-      label: Reproduction XAML
-      description: If applicable, please provide the XAML to reproduce the issue.
-    validations:
-      required: false
