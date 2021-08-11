@@ -51,4 +51,35 @@ body:
   - type: markdown
     attributes:
       value: |
-        #### Basic Information
+        # Basic Information
+  - type: input
+    id: mobile-shell-version
+    attributes:
+      label: Mobile Shell Version
+      description: The version of the Rock Mobile Shell.
+      placeholder: v2.0
+    validations:
+      required: true
+  - type: input
+    id: last-known-working-version
+    attributes:
+      label: Last Known Working Version
+      description: If applicable, what version of the shell last worked correctly?
+    validations:
+      required: false
+  - type: input
+    id: ios-info
+    attributes:
+      label: iOS Device Type(s) and iOS Version(s)
+      description: What iOS devices and versions are experiencing the issue?
+      placeholder: 
+    validations:
+      required: true
+  - type: input
+    id: android-info
+    attributes:
+      label: Android Device Type(s) and Android Version(s)
+      description: What Android devices and versions are experiencing the issue?
+      placeholder: 
+    validations:
+      required: true
