@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: ''
+labels: unferified
 assignees: ''
 
 ---
@@ -14,8 +14,7 @@ A clear and concise description of what the bug is.
 - [ ] Orange app
 - [ ] Blue app
 
-**To Reproduce**
-Steps to reproduce the behavior:
+**Steps to reproduce the behavior**
 1. Go to '...'
 2. Tap on '....'
 3. Scroll down to '....'
