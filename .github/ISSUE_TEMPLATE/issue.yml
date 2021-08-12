@@ -64,6 +64,7 @@ body:
     attributes:
       label: Reproduction XAML
       description: If applicable, please provide the XAML to reproduce the issue.
+      render: xml
     validations:
       required: false
   - type: markdown
