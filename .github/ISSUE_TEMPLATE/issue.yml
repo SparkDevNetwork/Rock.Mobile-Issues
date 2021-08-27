@@ -1,7 +1,7 @@
 name: Issue Report
 description: File a bug report
 title: "[Issue]: "
-labels: [bug, triage]
+labels: [bug, triage, unverified]
 body:
   - type: markdown
     attributes:
