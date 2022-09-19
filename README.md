@@ -1,6 +1,6 @@
-# Rock.Mobile TV Issue Tracker
+# Rock.Mobile Issue Tracker
 
-For a successful issue submission please read this entire readme. We care about the quality of Rock's Apple TV project, but with our limited resources we can only take complete and detailed issue submissions. Please understand that we are not trying to be difficult, but rather protecting our very limited resources.
+For a successful issue submission please read this entire readme. We care about the quality of Rock Mobile project, but with our limited resources we can only take complete and detailed issue submissions. Please understand that we are not trying to be difficult, but rather protecting our very limited resources.
 
 Rock for Apple TV is a complex collection of 3rd party frameworks as well as some custom elements. As such, we can only support issues with the TV Shell directly. If your bug report is not actually the shell we will close the issue and direct you to the proper place.
 
