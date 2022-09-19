@@ -1,12 +1,12 @@
 # Rock.Mobile Issue Tracker
 
-For a successful issue submission please read this entire readme. We care about the quality of Rock Mobile project, but with our limited resources we can only take complete and detailed issue submissions. Please understand that we are not trying to be difficult, but rather protecting our very limited resources.
+For a successful issue submission please read this entire readme. We care about the quality of Rock Mobile, but with our limited resources we can only take complete and detailed issue submissions. Please understand that we are not trying to be difficult, but rather protecting our very limited resources.
 
-Rock for Apple TV is a complex collection of 3rd party frameworks as well as some custom elements. As such, we can only support issues with the TV Shell directly. If your bug report is not actually the shell we will close the issue and direct you to the proper place.
+Rock Mobile is a complex collection of 3rd party frameworks as well as some custom elements. As such, we can only support issues with the Rock Mobile Shell directly. If your bug report is not actually a Rock Mobile Shell we will close the issue and direct you to the proper place.
 
 We are also very limited on the resources we have to investigate bug reports. What this means is that you _must_ provide exact and detailed steps to reproduce your problem. If we look at the issue and there is not enough details for us to replicate the problem then we will close the issue.
 
-Feature requests should be made at https://community.rockrms.com/Ideas with the Domain set to Apple TV.
+Feature requests should be made at https://community.rockrms.com/Ideas with the Domain set to Mobile.
 
 Examples of things we are unable to help with:
 * Issues that only manifest on your custom-built applications - you must be able to reproduce on the blue or orange app.
