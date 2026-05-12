@@ -90,14 +90,14 @@ body:
     id: mobile-shell-version
     attributes:
       label: Rock Mobile Shell Version
-      description: The shell version found in Rock Admin, not the App Store version (e.g. v2.0).
+      description: The shell version found in Rock Admin, not the App Store version (e.g. v19.0).
     validations:
       required: true
   - type: input
     id: rock-core-version
     attributes:
       label: Rock Core Version
-      description: The version of Rock Core your app is connected to (e.g. v17.0).
+      description: The version of Rock Core your app is connected to (e.g. v18.2).
     validations:
       required: true
   - type: input
