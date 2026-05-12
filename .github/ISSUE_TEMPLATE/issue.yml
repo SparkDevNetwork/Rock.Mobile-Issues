@@ -1,15 +1,36 @@
 name: Issue Report
-description: Add a report to help improve Rock Mobile.
+description: Submit a bug report to help improve Rock Mobile.
 labels: [status: unverified]
 body:
   - type: markdown
     attributes:
       value: |
-        > Please be sure to read the full guidelines for submitting issues on this repo's homepage before you continue.
+        > Read the full [submission guidelines](https://github.com/SparkDevNetwork/Rock.Mobile-Issues#readme) before continuing. Incomplete reports will be closed without investigation.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-Submission Checklist
+      options:
+        - label: I have read the submission guidelines
+          required: true
+        - label: I have reproduced this issue in the Rock Core app
+          required: true
   - type: markdown
     attributes:
       value: |
         # Basic Information
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Crash / App closes unexpectedly
+        - Visual / UI bug
+        - Functional bug
+        - Performance issue
+        - Other
+    validations:
+      required: true
   - type: textarea
     id: details
     attributes:
@@ -17,14 +38,6 @@ body:
       description: A clear and concise description of the issue.
     validations:
       required: true
-  - type: checkboxes
-    id: reproduction-apps
-    attributes:
-      label: Can reproduce in
-      description: Which of our demo apps have you reproduced this issue in?
-      options:
-        - label: Orange App
-        - label: Blue App
   - type: textarea
     id: reproduction-steps
     attributes:
@@ -51,18 +64,29 @@ body:
       description: A clear and concise description of what actually happened.
     validations:
       required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does this issue occur?
+      options:
+        - Always reproducible
+        - Sometimes reproducible
+        - Happened once
+    validations:
+      required: true
   - type: textarea
     id: screenshots-video
     attributes:
       label: Screenshots or Videos
-      description: Please add visuals to help explain the issue.
+      description: Add visuals to help explain the issue. Visual bugs require a full-device screenshot. Step-based bugs require a video.
     validations:
       required: true
   - type: textarea
     id: reproduction-xaml
     attributes:
       label: Reproduction XAML
-      description: If applicable, please provide XAML to reproduce the issue.
+      description: If applicable, provide the complete XAML needed to reproduce the issue. Partial snippets will result in a closed issue.
       render: xml
     validations:
       required: false
@@ -70,18 +94,35 @@ body:
     attributes:
       value: |
         # Environment Information
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform(s) Affected
+      options:
+        - iOS only
+        - Android only
+        - Both iOS and Android
+    validations:
+      required: true
   - type: input
     id: mobile-shell-version
     attributes:
-      label: Mobile Shell Version
+      label: Rock Mobile Shell Version
       description: The version of the Rock Mobile Shell (e.g. v2.0).
+    validations:
+      required: true
+  - type: input
+    id: rock-core-version
+    attributes:
+      label: Rock Core Version
+      description: The version of Rock Core your app is connected to (e.g. v17.0).
     validations:
       required: true
   - type: input
     id: last-known-working-version
     attributes:
       label: Last Known Working Version
-      description: If applicable, what version of the shell last worked correctly?
+      description: If applicable, what version last worked correctly?
     validations:
       required: false
   - type: input
@@ -91,7 +132,7 @@ body:
       description: What iOS devices and versions are experiencing the issue?
       placeholder: 
     validations:
-      required: true
+      required: false
   - type: input
     id: android-info
     attributes:
@@ -99,4 +140,4 @@ body:
       description: What Android devices and versions are experiencing the issue?
       placeholder: 
     validations:
-      required: true
+      required: false
