@@ -90,7 +90,7 @@ body:
     id: mobile-shell-version
     attributes:
       label: Rock Mobile Shell Version
-      description: The version of the Rock Mobile Shell (e.g. v2.0).
+      description: The shell version found in Rock Admin, not the App Store version (e.g. v2.0).
     validations:
       required: true
   - type: input
