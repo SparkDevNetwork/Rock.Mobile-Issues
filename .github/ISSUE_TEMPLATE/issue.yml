@@ -2,16 +2,12 @@ name: Issue Report
 description: Submit a bug report to help improve Rock Mobile.
 labels: [status: unverified]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        > Read the full [submission guidelines](https://github.com/SparkDevNetwork/Rock.Mobile-Issues#readme) before continuing. Incomplete reports will be closed without investigation.
   - type: checkboxes
     id: preflight
     attributes:
-      label: Pre-Submission Checklist
+      label: Before You Submit
       options:
-        - label: I have read the submission guidelines
+        - label: I have read the [submission guidelines](https://github.com/SparkDevNetwork/Rock.Mobile-Issues#readme)
           required: true
         - label: I have reproduced this issue in the Rock Core app
           required: true
@@ -35,7 +31,7 @@ body:
     id: details
     attributes:
       label: Issue Description
-      description: A clear and concise description of the issue.
+      description: Describe what is happening and what you expected to happen instead.
     validations:
       required: true
   - type: textarea
@@ -48,20 +44,6 @@ body:
         2. Tap on '....'
         3. Scroll down to '....'
         4. See error
-    validations:
-      required: true
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: Expected Behavior
-      description: A clear and concise description of what you expected to happen.
-    validations:
-      required: true
-  - type: textarea
-    id: actual-behavior
-    attributes:
-      label: Actual Behavior
-      description: A clear and concise description of what actually happened.
     validations:
       required: true
   - type: dropdown
@@ -79,9 +61,9 @@ body:
     id: screenshots-video
     attributes:
       label: Screenshots or Videos
-      description: Add visuals to help explain the issue. Visual bugs require a full-device screenshot. Step-based bugs require a video.
+      description: Add a screenshot for visual bugs. For issues that require multiple steps to reproduce, a video is strongly encouraged.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: reproduction-xaml
     attributes:
@@ -126,18 +108,10 @@ body:
     validations:
       required: false
   - type: input
-    id: ios-info
+    id: device-info
     attributes:
-      label: iOS Device Type(s) and iOS Version(s)
-      description: What iOS devices and versions are experiencing the issue?
-      placeholder: 
-    validations:
-      required: false
-  - type: input
-    id: android-info
-    attributes:
-      label: Android Device Type(s) and Android Version(s)
-      description: What Android devices and versions are experiencing the issue?
-      placeholder: 
+      label: Device(s) and OS Version(s)
+      description: List the device(s) and OS version(s) where you reproduced the issue.
+      placeholder: "e.g. iPhone 15, iOS 17.2 / Samsung Galaxy S23, Android 14"
     validations:
       required: false
