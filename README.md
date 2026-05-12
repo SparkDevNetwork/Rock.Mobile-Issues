@@ -1,29 +1,54 @@
-# Rock.Mobile Issue Tracker
+# Rock Mobile Issue Tracker
 
-For a successful issue submission please read this entire readme. We care about the quality of Rock Mobile, but with our limited resources we can only take complete and detailed issue submissions. Please understand that we are not trying to be difficult, but rather protecting our very limited resources.
+**Read this in full before submitting.** We take Rock Mobile quality seriously. To protect
+our limited resources, we only act on complete, detailed reports. Incomplete submissions
+will be closed without investigation.
 
-Rock Mobile is a complex collection of 3rd party frameworks as well as some custom elements. As such, we can only support issues with the Rock Mobile Shell directly. If your bug report is not actually a Rock Mobile Shell we will close the issue and direct you to the proper place.
+## Scope
 
-We are also very limited on the resources we have to investigate bug reports. What this means is that you _must_ provide exact and detailed steps to reproduce your problem. If we look at the issue and there is not enough details for us to replicate the problem then we will close the issue.
+This tracker covers issues with the Rock Core mobile app experience. If your report falls
+outside that scope, we'll close it and point you in the right direction.
 
-Feature requests should be made at https://community.rockrms.com/Ideas with the Domain set to Mobile.
+Feature requests belong at [community.rockrms.com/Ideas](https://community.rockrms.com/Ideas)
+with the Domain set to Mobile.
 
-Examples of things we are unable to help with:
-* Issues that only manifest on your custom-built applications - you must be able to reproduce on the blue or orange app.
-* Syntax errors with XAML
-* Xamarin Forms XAML elements (StackLayout, Grid, etc.)
-* Bugs in the iOS/Android (believe it or not this happens)
-* "How do I..." questions
-* Poorly written description of problem
-* Inadequate reproduction steps
-* Lack of XAML that reproduces the problem
+## What We Can't Help With
 
-Bugs must be reproducible with either the Blue or Orange app. If the only way to reproduce the bug is in your own custom built application then you must go through your app partner to report the bug.
+We'll close issues that involve:
 
-If your bug is a simple visual bug that can be demonstrated with a screenshot then you must provide a screenshot showing the issue, even if it seems obvious. This must also be a full-device screenshot, this can not be cropped down. You must still provide the necessary XAML to reproduce the issue.
+- Bugs that only appear in your custom-built app (see reproduction requirements below)
+- Syntax errors in XAML
+- Standard .NET MAUI elements (StackLayout, Grid, etc.)
+- Bugs in iOS or Android itself
+- "How do I..." questions
+- Vague or incomplete problem descriptions
+- Missing reproduction steps
+- XAML-related bugs submitted without reproduction XAML
 
-If your bug requires a series of steps (tap this, then tap this, then tap this) then you _must_ make a video that demonstrates the problem and the steps involved. There are on-device screen recorders you can use or you can also just use a camera (or another phone) to record.
+For general help, questions, and troubleshooting, join the [#mobile channel on Rock Community
+Chat](https://community.rockrms.com/chat).
 
-If the bug you are reporting is XAML related you must include the **entire** XAML required to reproduce - this means we should be able to copy and paste your XAML into (for example) a Content block and see the problem. If you give us just a tiny snippet of the XAML then your issue will be closed.
+## Reproduction Requirements
 
-You must also provide a minimal reproduction example (read https://stackoverflow.com/help/minimal-reproducible-example). If you paste 2 pages worth of XAML for a bug that has to do with a single node element, we will probably close your issue. For example, if you are reporting an issue when using a Label next to an Image with shadow, don't include buttons, grids or other elements that are not absolutely required to demonstrate the problem.
+All bugs must reproduce in the **Rock Core app**.
+
+- [Download on the App Store](https://apps.apple.com/us/app/rock-core/id1498547817)
+- [Get it on Google Play](https://play.google.com/store/apps/details?id=org.sparkdevnetwork.rockmobile&hl=en-US)
+
+If a bug only reproduces in your custom-built app, report it through your app partner.
+
+**Screenshots:** For visual bugs, include a full-device screenshot. Cropped screenshots
+are not accepted. You must still include the XAML needed to reproduce the issue.
+
+**Videos:** If reproducing the bug requires a series of steps, record a video showing the
+full sequence. Use your device's built-in screen recorder, or record with another device.
+
+**XAML:** For XAML-related bugs, include the **complete** XAML required to reproduce the
+problem. We need to be able to paste it directly into a Content block and see the issue.
+Partial snippets will result in a closed issue.
+
+**Minimal reproduction:** Keep your XAML as small as possible. Read
+[this guide](https://stackoverflow.com/help/minimal-reproducible-example) for what that
+means. Two pages of XAML for a single-element bug will likely result in a closed issue.
+For example, if the problem is a Label next to a shadowed Image, leave out buttons, grids,
+and anything else not required to show the problem.
