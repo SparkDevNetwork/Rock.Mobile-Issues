@@ -3,3 +3,6 @@ contact_links:
   - name: Rock Community Chat
     url: https://community.rockrms.com/chat
     about: Questions? Join the #mobile channel.
+  - name: Feature Requests
+    url: https://community.rockrms.com/Ideas
+    about: Submit ideas with Domain set to Mobile.
