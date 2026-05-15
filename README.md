@@ -30,7 +30,7 @@ Chat](https://community.rockrms.com/chat).
 
 ## Reproduction Requirements
 
-All bugs must reproduce in the **Rock Core app**.
+All bugs must reproduce in the **Rock Core (orange) app**.
 
 - [Download on the App Store](https://apps.apple.com/us/app/rock-core/id1498547817)
 - [Get it on Google Play](https://play.google.com/store/apps/details?id=org.sparkdevnetwork.rockmobile&hl=en-US)
