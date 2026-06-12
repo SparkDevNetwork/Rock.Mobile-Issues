@@ -94,6 +94,14 @@ body:
     validations:
       required: true
   - type: input
+    id: git-hash
+    attributes:
+      label: Git Hash
+      description: The 7-character git commit hash displayed in the app (e.g. a1b2c3d). Found in the app's About or version info screen.
+      placeholder: "e.g. a1b2c3d"
+    validations:
+      required: true
+  - type: input
     id: rock-core-version
     attributes:
       label: Rock Core Version
