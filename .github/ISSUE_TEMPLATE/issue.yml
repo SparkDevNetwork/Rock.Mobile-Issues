@@ -76,6 +76,8 @@ body:
     attributes:
       value: |
         # Environment Information
+
+        To find the Shell Version and Git Hash, tap and hold the screen with two fingers for a few seconds.
   - type: dropdown
     id: platform
     attributes:
@@ -90,14 +92,14 @@ body:
     id: mobile-shell-version
     attributes:
       label: Rock Mobile Shell Version
-      description: The shell version found in Rock Admin, not the App Store version (e.g. v19.0).
+      description: The shell version of the app (e.g. v19.0).
     validations:
       required: true
   - type: input
     id: git-hash
     attributes:
       label: Git Hash
-      description: The 7-character git commit hash displayed in the app (e.g. a1b2c3d). Found in the app's About or version info screen.
+      description: The 7-character git commit hash (e.g. a1b2c3d).
       placeholder: "e.g. a1b2c3d"
     validations:
       required: true
@@ -108,13 +110,6 @@ body:
       description: The version of Rock Core your app is connected to (e.g. v18.2).
     validations:
       required: true
-  - type: input
-    id: last-known-working-version
-    attributes:
-      label: Last Known Working Version
-      description: If applicable, what version last worked correctly?
-    validations:
-      required: false
   - type: input
     id: device-info
     attributes:
